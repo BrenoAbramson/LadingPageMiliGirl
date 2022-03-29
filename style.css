@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Great+Vibes&family=Noto+Serif:ital@1&family=Righteous&family=Roboto:ital,wght@1,500&family=Sarala:wght@400;700&family=Shadows+Into+Light&family=Yatra+One&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background-image: url(./imgs/background.png);
+    background-attachment: fixed;
+    font-size: 100%;
+
+}
+
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+}
+.cabecalho-logo {
+    height: 90px;
+}
+
+.cabecalho-menu {
+    display: flex;
+    gap: 30px;
+}
+
+.cabecalho-menu-item {
+    font-family: 'Noto Serif', serif;
+    color: black;
+    font-weight: 700;
+    font-size: 17px;
+
+}
+
+.cabecalho-menu-item:hover {
+    color: #ffffff; 
+    border: none;
+    background-color:  rgba(239, 174, 248, 0.603) ; 
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 40px;  
+}
+
+.conteudo {
+    margin-bottom: 48px;
+    border-top: 0.4px solid #fff2e7;
+}
+
+.primario {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.primario-escrita {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.primario-titulo {
+    font-family: 'Great Vibes', cursive;
+    font-size: 75px;
+    font-weight: 300px;
+}
+
+.primario-subtitulo {
+    font-family: 'Noto Serif', serif;
+    color: black;
+}
+
+.primario-botao {
+    background-color: #eec4d0;
+    width: 150px;
+    height: 40px;
+    border: none;
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    font-family: 'Noto Serif', serif;
+    font-weight: 550;
+    font-size: 18px;
+    color: black;
+}
+
+.primario-botao:hover {
+    background-color: rgba(239, 174, 248, 0.603);
+    color: #ffffff;
+}
+
+.primario-img {
+    height: 430px;
+    margin-top: 42px;
+    margin-right: 20px;
+}
+
+.secundario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 15px;
+}
+
+.secundario-subtitulo {
+    font-family: 'Noto Serif', serif;
+    font-weight: 400px;
+    font-size: 30px;
+    color: black;
+}
+
+.secundario-p {
+    font-family: 'Noto Serif', serif;
+    text-align: justify;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 600px;
+}
+
+.rodape {
+    margin-bottom: 48px;
+    border-top: 0.4px solid #fff2e7;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.rodape-logo {
+    height: 130px;
+}
+
+
+
+@media (max-width: 1024px) {
+    body {
+        background-image: none;
+        background-color: #efb5c5;
+    }
+    .cabecalho {
+        width: 90%;
+    }
+}
+
+
+@media (max-width: 730px) { 
+    .cabecalho {
+        width: 90%;
+    }
+
+    .cabecalho-logo {
+        display: none;
+    }
+
+
+    .conteudo {
+        width: 120%;
+        
+    }
+
+    .primario-escrita {
+        width: 844px;
+        align-items: center;
+        margin-right: 150px;
+    }
+
+
+    .primario {
+        margin-top: 30px;
+    }
+
+    .primario-subtitulo {
+        font-size: 15px;
+        
+    }
+
+    .primario-botao {
+        width: 98px;
+        height: 35px;
+    }
+
+    .primario-img {
+        display: none;
+    }
+
+    .secundario {
+        margin-top: 10px;
+        margin-right: 150px;
+
+    }
+
+    .secundario-subtitulo {
+        font-size: 25px;
+    }
+
+    .secundario-p {
+        font-size: 15px;
+    }
+
+}
+
+@media (max-width: 400px) { 
+    .cabecalho {
+        width: 90%;
+    }
+
+    .cabecalho-menu-item {
+        font-size: 12px;
+    }
+
+    .conteudo {
+        width: 120%;
+        
+    }
+
+    .primario-escrita {
+        width: 844px;
+        align-items: center;
+        margin-right: 90px  ;
+    }
+
+
+    .primario {
+        margin-top: 30px;
+    }
+
+    .primario-titulo {
+        font-size: 55px;
+    }
+
+    .primario-subtitulo {
+        font-size: 11px;
+        
+    }
+
+    .primario-botao {
+        width: 69px;
+        height: 29px;
+        font-size: 15px;
+    }
+
+    .primario-img {
+        display: none;
+    }
+
+    .secundario {
+        margin-top: 10px;
+        margin-right: 104px;
+
+    }
+
+    .secundario-subtitulo {
+        font-size: 25px;
+    }
+
+    .secundario-p {
+        font-size: 11px;
+    }
+
+}
